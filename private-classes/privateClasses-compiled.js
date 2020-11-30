@@ -208,7 +208,5 @@ try {
   printer.bothResults = 'new';
 } catch (err) {
   console.error("".concat(err.name, ": ").concat(err.message));
-}
-
-console.log('test'); //  Throws an error on Babel compile time
+} //  Throws an error on Babel compile time
 // printer.#setBothResults = 'new'

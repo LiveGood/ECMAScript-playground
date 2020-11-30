@@ -100,7 +100,5 @@ try {
   console.error(`${err.name}: ${err.message}`);
 }
 
-console.log('test');
-
 //  Throws an error on Babel compile time
 // printer.#setBothResults = 'new'
