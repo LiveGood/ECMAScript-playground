@@ -1,4 +1,3 @@
-// This is what happens after watching 'Clean Code' video by Uncle Bob
 require("@babel/core").transform("code", {
   presets: ["@babel/preset-env"],
 });
@@ -103,4 +102,3 @@ try {
 
 //  Throws an error on Babel compile time
 // printer.#setBothResults = 'new'
-

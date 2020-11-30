@@ -9,7 +9,7 @@
 ### `node private-classes-compiled.js`
 
 
-If you change something to the main file recompile:
+If you change something to the main file, recompile:
 
 ### `npx babel private-classes.js -o private-classes-compiled.js`
 
@@ -24,8 +24,6 @@ babl() {
 }
 ```
 
-## Then use like this:
+## Then run like this:
 
 ### `babl private-classes`
-
-
