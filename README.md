@@ -4,14 +4,15 @@
 
 ### `npm install`
 
-## Run
+## Compile
+### `npx babel ./private-classes/privateClasses.js -o./private-classes/privateClasses-compiled.js`
 
+## Run 
+### `cd private-classes`
 ### `node private-classes-compiled.js`
 
 
 If you change something to the main file, recompile:
-
-### `npx babel private-classes.js -o private-classes-compiled.js`
 
 ## Or add shell allias to compile and run directly:
 
@@ -26,4 +27,4 @@ babl() {
 
 ## Then run like this:
 
-### `babl private-classes`
+### `babl ./private-classes/privateClasses`

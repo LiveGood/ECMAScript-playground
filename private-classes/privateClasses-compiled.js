@@ -24,7 +24,6 @@ function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = p
 
 function _classPrivateFieldGet(receiver, privateMap) { var descriptor = privateMap.get(receiver); if (!descriptor) { throw new TypeError("attempted to get private field on non-instance"); } if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
 
-// This is what happens after watching 'Clean Code' video by Uncle Bob
 require("@babel/core").transform("code", {
   presets: ["@babel/preset-env"]
 });
@@ -205,9 +204,11 @@ console.log(printer.bothResults);
 printer.execute();
 
 try {
-  // Throws error on run time;
+  // Throws error on JS run time;
   printer.bothResults = 'new';
 } catch (err) {
   console.error("".concat(err.name, ": ").concat(err.message));
-} //  this will throw error on Babel compile time
+}
+
+console.log('test'); //  Throws an error on Babel compile time
 // printer.#setBothResults = 'new'
