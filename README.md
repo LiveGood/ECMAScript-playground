@@ -1,5 +1,3 @@
-# ES-2019-playground
-
 ## Intall packages
 
 ### `npm install`
